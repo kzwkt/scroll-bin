@@ -23,7 +23,7 @@ jobs:
     - name:  install dependecies
       run: |
        bash build.sh
-       upload=$(realpath st-instantos/st)
+       upload=$(realpath scroll/scroll)
        echo "FILE1=${upload}" >> $GITHUB_ENV 
 
     - name: Create GitHub Release and Upload ZIP
