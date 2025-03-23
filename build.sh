@@ -1,7 +1,7 @@
 #
 apt update -y
-apt install -y libx11-dev libxft-dev libxext-dev libharfbuzz-dev zip git gcc make ca-certificates binutils --no-install-recommends
-git clone --depth=1 https://github.com/kzwkt/st-instantos
-cd st-instantos
+apt install -y  git gcc make ca-certificates binutils --no-install-recommends
+git clone --depth=1 https://git.suckless.org/scroll
+cd scroll
 make
-strip st
+strip scroll
